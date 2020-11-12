@@ -12,26 +12,20 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.bg-primary {
-  background-color: #0a6164;
-  color: #fff;
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+  z-index: 0;
 }
-.bg-light {
-  background-color: #2978a0;
-  color: #fff;
-  border: #ccc 1px solid;
-}
-.bg-dark {
-  background-color: #333;
-  color: #fff;
-}
-.bg-white {
-  background-color: #fff;
-  color: #333;
-  border: #ccc 1px solid;
-}
+
 body {
-  background-color: #64baff;
+  background: url(images/tornVictorian.jpg);
+  z-index: -1;
 }
 
 .center {
@@ -49,6 +43,7 @@ body {
   border-image-source: url(images/frame2.png);
   border-image-slice: 650;
   border-image-width: 52px 65px;
+  z-index: 2;
 }
 
 section {
@@ -95,4 +90,72 @@ section {
   background: #000;
   border-radius: 50%;
   content: ' ';
+}
+
+.links {
+  position: relative;
+  font-size: 60px;
+  visibility: visible;
+  color: black;
+  font-family: 'Times';
+  font-weight: normal;
+}
+
+#divProjects {
+  position: fixed;
+  left: 200px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+#divProfile {
+  position: fixed;
+  left: 200px;
+  top: 350px;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+#divSocials {
+  position: fixed;
+  left: 200px;
+  top: 500px;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+.projectWord {
+  top: 100px;
+  position: fixed;
+  z-index: 0;
+  background: url(images/tornVictorian.jpg) repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.582);
+}
+
+.projectOverlay {
+  top: 100px;
+  position: fixed;
+  z-index: 10;
+  color: transparent;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.062), 8px -20px 20px yellow,
+    12px -30px 25px orange, 5px -60px 40px orange, 15px -34px 30px darkorange,
+    0px -36px 35px red, 40px -40px 50px red, -20px -60px 40px red,
+    20px -80px 40px red, 40px -80px 40px red, 20px -120px 60px red,
+    20px -150px 80px black, 50px -160px 80px black, 100px -200px 100px black,
+    120px -150px 100px black, 100px -100px 100px black, 120px -220px 100px black,
+    200px -300px 150px black;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
