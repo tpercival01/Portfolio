@@ -156,7 +156,7 @@ a:active {
   grid-template-rows: 50px 100px auto;
   grid-template-columns: 300px 300px 300px;
   gap: 15px;
-  margin-left: 15%;
+  margin-left: 25%;
 }
 
 #projects-container > p:first-child {
