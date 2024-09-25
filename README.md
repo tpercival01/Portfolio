@@ -2,7 +2,7 @@
 My personal portfolio page to display snippets of my projects and my resume.
 
 ## Usage
-Go to [This link](portfolio-tpercival01.vercel.app/) to access it.
+Go to [this link](https://portfolio-tpercival01.vercel.app/) to access it.
 
 Scroll down or use the navigation buttons to access different sections.
 
