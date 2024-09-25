@@ -1,6 +1,10 @@
 # Portfolio
+My personal portfolio page to display snippets of my projects and my resume.
 
-This is a website to display my links and my projects. 
+## Usage
+Go to portfolio-tpercival01.vercel.app/ to access it.
 
-Created with React to ensure responsiveness across most screen sizes, as well as a more modern look.
+Scroll down or use the navigation buttons to access different sections.
 
+## Technologies
+Built using HTML, CSS and JavaScript.
