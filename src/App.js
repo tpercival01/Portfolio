@@ -7,7 +7,7 @@ import Summary from "./pages/summary";
 import { useState } from "react";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("projects");
+  const [currentPage, setCurrentPage] = useState("summary");
 
   const handleNav = (e) => {
     setCurrentPage(e.target.title);
