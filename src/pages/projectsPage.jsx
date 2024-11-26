@@ -38,11 +38,11 @@ const Projects = () => {
           desc="Created a custom Convolutional Neural Network (CNN) to accurately recognise handwritten three-digit numbers. Tuned layers and weights to achieve optimal accuracy, demonstrating a deep understanding of machine learning model architecture and fine-tuning."
         />
         <Project
-          title="Positive Content Aggregator"
-          tech="Python, Sentiment Analysis, Firebase, Swift"
+          title="Good News App"
+          tech="Python, Tkinter, Sentiment Analysis, News API"
           live=""
-          code="https://github.com/tpercival01/Good-News"
-          desc="Developed an iOS app that curates only positive content from social media platforms. Built a backend in Python to scrape data and perform sentiment analysis, storing positive results in Firebase for seamless access via the app. Aimed to improve user mental well-being through content filtering."
+          code="https://github.com/tpercival01/Good-news-app"
+          desc="Developed a Python application that curates positive news articles to promote mental well-being. The app features a Tkinter-based GUI, integrates the News API for fetching the latest news, and uses NLTK for sentiment analysis to filter uplifting content, providing users with an accessible and positive news experience."
         />
         <Project
           title="Circuit Puzzle Game using Pygame"
