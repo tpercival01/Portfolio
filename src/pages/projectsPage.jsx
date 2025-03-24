@@ -17,11 +17,31 @@ const Projects = () => {
         </a>
       </p>
         <Project
-          title="Asset Checker"
-          tech="Python, Tkinter, Selenium"
+          title="Tap n' Sound"
+          tech="Swift, Xcode"
           live=""
-          code="https://github.com/tpercival01/asset-checker"
-          desc="Created an asset management tool using Python and Tkinter, integrating data scraped from multiple APIs and processed with Pandas for consolidation into a comprehensive Excel report."
+          code="https://github.com/tpercival01/Tap-n-Sound"
+          desc="Developed Tap N' Sound, a SwiftUI-based iOS app that delivers an audio-visual response for each tap (up to 10 concurrently), recreating a discontinued app to meet client needs."        />
+        <Project
+          title="Good News"
+          tech="Python, Tkinter, Sentiment Analysis, News API"
+          live=""
+          code="https://github.com/tpercival01/Good-news-app"
+          desc="Crafted a dynamic Python application that curates uplifting news to inspire and promote mental well-being. Featuring a sleek Tkinter interface, it integrates real-time updates via the News API and leverages NLTK sentiment analysis to showcase only the most positive headlines. This engaging app delivers an accessible, mood-boosting news experience with every click."
+        />
+        <Project
+          title="Circuit Puzzle Game using Pygame"
+          tech="Python, Pygame"
+          live=""
+          code="https://github.com/tpercival01/circuit-puzzle-game"
+          desc="Designed and developed a puzzle game where players connect circuit tiles to complete a path. Built with Pygame, featuring an intuitive UI with a main menu, difficulty levels, and engaging gameplay mechanics to challenge users as they progress."
+        />
+        <Project
+          title="Manor Murder Mystery"
+          tech="Python, Pygame"
+          live=""
+          code="https://github.com/tpercival01/manor-murder-mystery"
+          desc="Immerse yourself in a richly woven detective narrative where a lavish soirée turns deadly. Traverse hidden passages, collect crucial evidence, and issue contextual text commands to uncover the culprit behind a gruesome murder. With item-based progression and a climactic showdown, this command-line adventure challenges your investigative prowess and storytelling instincts."
         />
         <Project
           title="Password Creator"
@@ -30,26 +50,12 @@ const Projects = () => {
           code="https://github.com/tpercival01/password-creator"
           desc="Developed a password generator application to create secure, random passwords with configurable options for length and complexity. Built using Tkinter, ensuring responsive design and smooth user interaction."
         />
-        <Project
-          title="Handwritten Number Recognition with CNN"
-          tech="Python, TensorFlow, Keras, OpenCV"
-          live=""
-          code="https://github.com/tpercival01/Multi-Label-Image-Classification"
-          desc="Created a custom Convolutional Neural Network (CNN) to accurately recognise handwritten three-digit numbers. Tuned layers and weights to achieve optimal accuracy, demonstrating a deep understanding of machine learning model architecture and fine-tuning."
-        />
-        <Project
-          title="Good News App"
-          tech="Python, Tkinter, Sentiment Analysis, News API"
-          live=""
-          code="https://github.com/tpercival01/Good-news-app"
-          desc="Developed a Python application that curates positive news articles to promote mental well-being. The app features a Tkinter-based GUI, integrates the News API for fetching the latest news, and uses NLTK for sentiment analysis to filter uplifting content, providing users with an accessible and positive news experience."
-        />
-        <Project
-          title="Circuit Puzzle Game using Pygame"
-          tech="Python, Pygame"
-          live=""
-          code="https://github.com/tpercival01/circuit-puzzle-game"
-          desc="Designed and developed a puzzle game where players connect circuit tiles to complete a path. Built with Pygame, featuring an intuitive UI with a main menu, difficulty levels, and engaging gameplay mechanics to challenge users as they progress."
+        <Project 
+          title="Marina's Garden" 
+          tech="JavaScript, HTML, CSS" 
+          live="" 
+          code="https://github.com/tpercival01/Marinas-Garden" 
+          desc="Grow a virtual garden and keep your plants flourishing with automated care reminders. This JavaScript-driven website lets you 'plant' flowers and greenery, then notifies you when they need watering, sunlight, or other TLC. Designed to make plant care simple and fun, Marina's Garden brings a touch of nature to the digital realm." 
         />
     </div>
   );
