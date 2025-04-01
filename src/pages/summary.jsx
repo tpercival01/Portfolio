@@ -3,7 +3,9 @@ const Summary = () => {
   return (
     <div id="summary-container">
       <div id="summary-grid">
-        <span id="photo"></span>
+        <span id="photo">
+          <img src="./images/profile.png"></img>
+        </span>
         <p style={{ fontSize: "30px", gridRow: "1/1", gridColumn: "1/1" }}>
           Welcome, I am <strong>Thomas Percival</strong>.
         </p>
