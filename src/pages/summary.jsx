@@ -1,4 +1,3 @@
-import profileImg from "../images/profile.png";
 const Summary = () => {
   return (
     <div id="summary-container">
