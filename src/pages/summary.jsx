@@ -44,16 +44,15 @@ Python Developer and MSc Artificial Intelligence candidate, with a passion for d
           <p>Technologies</p>
           <span id="logos">
             <p>Python</p>
-            <p>Django</p>
-            <p>Flask</p>
+            <p>HTML</p>
+            <p>JavaScript</p>
+            <p>CSS</p>
             <p>Pandas</p>
             <p>NumPy</p>
             <p>SQL</p>
             <p>Tkinter</p>
-            <p>REST APIs</p>
             <p>Git</p>
             <p>PowerShell</p>
-            <p>Power BI</p>
           </span>
         </div>
       </div>
