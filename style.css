@@ -307,11 +307,19 @@ margin-bottom: 10px;
 font-size: 1.4rem;
 }
 
+.timeline-content ul {
+    padding-left: 15px;
+}
+
 .timeline-date {
 color: var(--text-secondary);
 font-style: italic;
 margin-bottom: 15px;
 font-size: 0.9rem;
+}
+
+.timeline-location {
+    margin-bottom: 15px;
 }
 
 /* Project Grid */
