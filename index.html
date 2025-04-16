@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thomas Percival Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Page Indicator -->
+    <div class="page-indicator">
+      <span class="current-page">01</span>
+      <span class="total-pages">/ 05</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span class="code-tag">&lt;</span>
+        Thomas Percival
+        <span class="code-tag">/&gt;</span>
+      </div>
+      <!-- Theme Switch -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            </div>
+            </label>
+        </div>
+  
+        <div class="nav-links">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="glitch" data-text="Hello, World!">Hello, World!</h1>
+            <div class="typewriter">
+              <span id="typed-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+              Service Desk  → Python Developer
+            </p>
+            <div class="floating-icons">
+              <i class="fab fa-python"></i>
+              <i class="fas fa-database"></i>
+              <i class="fas fa-chart-bar"></i>
+              <i class="fas fa-robot"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-content">
+          <h2>My Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Service Desk Professional</h3>
+              <p>Solving technical problems and helping users</p>
+              <ul>
+                <li>Handled 1000+ technical support tickets</li>
+                <li>Improved ticket resolution time by 25%</li>
+                <li>Started learning Python for automation</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h3>Python Automation</h3>
+              <p>Creating scripts to automate repetitive tasks</p>
+              <ul>
+                <li>Automated ticket categorization</li>
+                <li>Built monitoring dashboards</li>
+                <li>Reduced manual work by 40%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="section-content">
+          <h2>Featured Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-header">
+                <i class="fas fa-robot project-icon"></i>
+                <h3>Service Desk Automation</h3>
+              </div>
+              <p>
+                Automated ticket classification and routing using Python and machine
+                learning.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">scikit-learn</span>
+                <span class="tech-pill">pandas</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <i class="fas fa-chart-line project-icon"></i>
+                <h3>IT Analytics Dashboard</h3>
+              </div>
+              <p>
+                Real-time dashboard showing key metrics and trends from service desk
+                data.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Dash</span>
+                <span class="tech-pill">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="section-content">
+          <h2>Technical Skills</h2>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Python Ecosystem</h3>
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <span class="skill-name">Python</span>
+                  <div class="bar">
+                    <div class="progress" data-progress="85"></div>
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-name">pandas</span>
+                  <div class="bar">
+                    <div class="progress" data-progress="75"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="section-content">
+          <h2>Let's Connect!</h2>
+          <div class="contact-container">
+            <a href="mailto:thomaspercival@live.co.uk" class="contact-card" target="_blank" 
+            rel="noopener noreferrer">
+              <i class="fas fa-envelope"></i>
+              <span>Email Me</span>
+            </a>
+            <a href="https://github.com/tpercival01" class="contact-card" target="_blank" 
+            rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/thomaspercival" class="contact-card" target="_blank" 
+            rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
