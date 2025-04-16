@@ -152,26 +152,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     // Mouse Wheel Navigation
-    let isScrolling = false;
-    document.addEventListener("wheel", (e) => {
-      if (!isScrolling) {
-        isScrolling = true;
-        const currentSection = document.querySelector(".section.active");
-        const currentIndex = Array.from(sections).indexOf(currentSection);
+    // let isScrolling = false;
+    // document.addEventListener("wheel", (e) => {
+    //   if (!isScrolling) {
+    //     isScrolling = true;
+    //     const currentSection = document.querySelector(".section.active");
+    //     const currentIndex = Array.from(sections).indexOf(currentSection);
   
-        if (e.deltaY > 0) {
-          const nextIndex = (currentIndex + 1) % sections.length;
-          showSection(sections[nextIndex].id);
-        } else {
-          const prevIndex =
-            (currentIndex - 1 + sections.length) % sections.length;
-          showSection(sections[prevIndex].id);
-        }
+    //     if (e.deltaY > 0) {
+    //       const nextIndex = (currentIndex + 1) % sections.length;
+    //       showSection(sections[nextIndex].id);
+    //     } else {
+    //       const prevIndex =
+    //         (currentIndex - 1 + sections.length) % sections.length;
+    //       showSection(sections[prevIndex].id);
+    //     }
   
-        setTimeout(() => {
-          isScrolling = false;
-        }, 1000);
-      }
+    //     setTimeout(() => {
+    //       isScrolling = false;
+    //     }, 1000);
+    //   }
+    // });
+
+    document.querySelectorAll('.section-content').forEach(section => {
+        section.style.scrollBehavior = 'smooth';
     });
   
     // Initialize
