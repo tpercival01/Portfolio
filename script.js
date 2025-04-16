@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.querySelector("#checkbox");
     const htmlElement = document.documentElement;
     const progressBars = document.querySelectorAll(".progress");
-  
+    const focusAreas = document.querySelectorAll('.focus-area');
+    const skillItems = document.querySelectorAll('.skill-item');
+
     // Theme Management
     function initializeTheme() {
       const savedTheme = localStorage.getItem("theme") || "dark";
@@ -112,22 +114,86 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // Intersection Observer for Animations
     const observerOptions = {
       threshold: 0.1,
       rootMargin: "0px 0px -50px 0px",
-    };
-  
-    const observer = new IntersectionObserver((entries) => {
+  };
+
+  const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          if (entry.target.classList.contains("skill-bar")) {
-            animateSkillBars();
+          if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+              if (entry.target.classList.contains("skill-bar")) {
+                  animateSkillBars();
+              }
+              if (entry.target.classList.contains("focus-area")) {
+                  entry.target.style.opacity = '1';
+                  entry.target.style.transform = 'translateY(0)';
+              }
           }
-        }
       });
-    }, observerOptions);
+  }, observerOptions);
+
+  // Observe all animated elements
+  document
+      .querySelectorAll(".project-card, .timeline-item, .skill-bar, .focus-area")
+      .forEach((el) => observer.observe(el));
+
+  // New Skills Section Interactions
+  function initializeSkillsInteractions() {
+      // Focus area hover effects
+      focusAreas.forEach(area => {
+          area.addEventListener('mouseenter', () => {
+              focusAreas.forEach(other => {
+                  if (other !== area) {
+                      other.style.opacity = '0.7';
+                  }
+              });
+          });
+          
+          area.addEventListener('mouseleave', () => {
+              focusAreas.forEach(other => {
+                  other.style.opacity = '1';
+              });
+          });
+
+          // Set initial state for animation
+          area.style.opacity = '0';
+          area.style.transform = 'translateY(20px)';
+      });
+
+      // Skill items click handling
+      skillItems.forEach(item => {
+          item.addEventListener('click', () => {
+              const projects = item.dataset.projects.split(',');
+              highlightRelatedProjects(projects);
+          });
+      });
+  }
+
+  // Function to highlight related projects
+  function highlightRelatedProjects(projectNames) {
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      projectCards.forEach(card => {
+          const cardTitle = card.querySelector('h3').textContent.trim();
+          if (projectNames.includes(cardTitle)) {
+              card.classList.add('highlighted');
+              // Scroll to the first related project
+              if (projectNames[0] === cardTitle) {
+                  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+          } else {
+              card.classList.remove('highlighted');
+          }
+      });
+
+      // Remove highlight after a delay
+      setTimeout(() => {
+          projectCards.forEach(card => card.classList.remove('highlighted'));
+      }, 2000);
+  }
+
   
     // Observe elements for animation
     document
@@ -150,29 +216,6 @@ document.addEventListener("DOMContentLoaded", () => {
         showSection(sections[prevIndex].id);
       }
     });
-  
-    // Mouse Wheel Navigation
-    // let isScrolling = false;
-    // document.addEventListener("wheel", (e) => {
-    //   if (!isScrolling) {
-    //     isScrolling = true;
-    //     const currentSection = document.querySelector(".section.active");
-    //     const currentIndex = Array.from(sections).indexOf(currentSection);
-  
-    //     if (e.deltaY > 0) {
-    //       const nextIndex = (currentIndex + 1) % sections.length;
-    //       showSection(sections[nextIndex].id);
-    //     } else {
-    //       const prevIndex =
-    //         (currentIndex - 1 + sections.length) % sections.length;
-    //       showSection(sections[prevIndex].id);
-    //     }
-  
-    //     setTimeout(() => {
-    //       isScrolling = false;
-    //     }, 1000);
-    //   }
-    // });
 
     document.querySelectorAll('.section-content').forEach(section => {
         section.style.scrollBehavior = 'smooth';
@@ -184,6 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
       showSection("home");
       initTypewriter();
       animateSkillBars();
+      initializeSkillsInteractions();
     }
   
     initialize();
