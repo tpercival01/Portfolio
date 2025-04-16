@@ -324,22 +324,114 @@ font-size: 0.9rem;
 
 /* Project Grid */
 .project-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 2rem;
-margin-top: 2rem;
-}
-
-.project-card {
-background: var(--card-bg);
-border-radius: 15px;
-padding: 2rem;
-transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-transform: translateY(-10px);
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+  }
+  
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2196f3, #e91e63);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-icon {
+    font-size: 1.5rem;
+    color: #2196f3;
+  }
+  
+  .project-description {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-pill {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196f3;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover .tech-pill {
+    background: rgba(33, 150, 243, 0.2);
+  }
+  
+  .project-footer {
+    margin-top: auto;
+    text-align: right;
+  }
+  
+  .view-project {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover .view-project {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .view-project i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .view-project i {
+    transform: translateX(5px);
+  }
+  
 
 /* Skills Section */
 .skills-container {
