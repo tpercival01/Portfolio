@@ -697,3 +697,30 @@ color: var(--text-secondary);
     border-color: transparent var(--card-bg) transparent transparent;
 }
 }
+
+.section-divider {
+  margin: 4rem 0 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.section-divider h2 {
+  background: var(--background-color);
+  /* Match your site's background */
+  display: inline-block;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border-color);
+  /* Match your site's border color */
+  z-index: 0;
+}
