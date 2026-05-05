@@ -1,526 +1,184 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en-GB">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Thomas Percival | Portfolio</title>
-  <meta
-    name="description"
-    content="Portfolio of Thomas Percival — Python developer, AI MSc student, and builder of practical software projects."
-  />
+    <title>Thomas Percival | Python Backend Developer</title>
+    <meta name="description" content="Thomas Percival builds Python backend systems, AI workflow tools, internal automation platforms, and data workflow products. Open to freelance Python automation and backend engineering work." />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thomas Percival | Python Backend Developer" />
+    <meta property="og:description" content="Python backend systems, AI workflow tools, internal automation platforms, and data workflow products." />
+    <meta property="og:url" content="https://tpercival01.github.io/Portfolio/" />
+    <meta property="og:site_name" content="Thomas Percival" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Thomas Percival | Portfolio" />
-  <meta
-    property="og:image"
-    content="https://tpercival01.github.io/Portfolio/assets/linkedin-preview.png"
-  />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1900" />
-  <meta property="og:image:height" content="900" />
-  <meta property="og:image:alt" content="Thomas Percival Portfolio preview" />
-  <meta
-    property="og:description"
-    content="Portfolio of Thomas Percival — Python developer, AI MSc student, and builder of practical software projects."
-  />
-  <meta property="og:url" content="https://tpercival01.github.io/Portfolio/" />
-  <meta property="og:site_name" content="Thomas Percival Portfolio" />
-
-  <!-- Optional: Twitter / other platforms -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Thomas Percival | Portfolio" />
-  <meta
-    name="twitter:description"
-    content="Portfolio of Thomas Percival — Python developer, AI MSc student, and builder of practical software projects."
-  />
-  <meta
-    name="twitter:image"
-    content="https://tpercival01.github.io/Portfolio/assets/linkedin-preview.png"
-  />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 </head>
 
 <body>
-    <!-- Page Indicator -->
-    <div class="page-indicator">
-        <span class="current-page">01</span>
-        <span class="total-pages">/ 05</span>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Thomas Percival home">
+      Thomas Percival
+    </a>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-brand">
-            <span class="code-tag">&lt;</span> Thomas Percival
-            <span class="code-tag">/&gt;</span>
-        </div>
-        <!-- Theme Switch -->
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero section">
+            <div class="hero-copy">
+                <p class="eyebrow">Python Backend Developer</p>
+
+                <h1>
+                    I build backend systems, AI workflow tools, and automation platforms.
+                </h1>
+
+                <p class="hero-text">
+                    My work sits at the intersection of backend engineering, automation, and applied AI: FastAPI services, PostgreSQL-backed systems, async workflows, Celery and Redis workers, Dockerised apps, LLM integrations, and full-stack tools with React and Next.js.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary" href="mailto:thomaspercival@live.co.uk">
+            Hire me for freelance work
+          </a>
+                    <a class="button secondary" href="https://github.com/tpercival01" target="_blank" rel="noopener noreferrer">
+            View GitHub
+          </a>
+                    <a class="button secondary" href="https://linkedin.com/in/thomaspercival" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+                </div>
             </div>
-            </label>
-        </div>
 
-        <div class="nav-links">
-            <a href="#home" class="nav-item active">Home</a>
-            <a href="#about" class="nav-item">About</a>
-            <a href="#projects" class="nav-item">Projects</a>
-            <a href="#skills" class="nav-item">Skills</a>
-            <a href="#contact" class="nav-item">Contact</a>
-        </div>
-    </nav>
+            <aside class="availability-card" aria-label="Availability">
+                <span class="status-dot"></span>
+                <p class="availability-title">Currently open to</p>
+                <ul>
+                    <li>Freelance Python automation projects</li>
+                    <li>Backend engineering roles</li>
+                    <li>AI application engineering roles</li>
+                    <li>Internal tools and data workflow projects</li>
+                </ul>
+            </aside>
+        </section>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="glitch" data-text="Hello, World!">Hello, World!</h1>
-                    <div class="typewriter">
-                        <span id="typed-text"></span><span class="cursor">|</span>
-                    </div>
-                    <p class="hero-description">
-                        MSc AI Graduate | IT Automation Engineer
+        <section id="work" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">What I build</p>
+                <h2>Practical software for real operational problems.</h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Python backend systems</h3>
+                    <p>
+                        FastAPI services, async job processing, REST APIs, PostgreSQL data models, idempotent upserts, and Dockerised deployment flows.
                     </p>
-                    <div class="floating-icons">
-                        <i class="fab fa-python"></i>
-                        <i class="fas fa-database"></i>
-                        <i class="fas fa-chart-bar"></i>
-                        <i class="fas fa-robot"></i>
-                    </div>
+                </article>
+
+                <article class="service-card">
+                    <h3>AI workflow tools</h3>
+                    <p>
+                        LLM-powered applications that complete useful tasks: data analysis, content processing, structured generation, and constrained automation.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Internal automation platforms</h3>
+                    <p>
+                        Tools that replace manual spreadsheet work, repetitive admin, support processes, reporting workflows, and operational handoffs.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value">19</span>
+                    <span class="metric-label">public GitHub repositories</span>
+                </div>
+
+                <div class="metric-card">
+                    <span class="metric-value">Python</span>
+                    <span class="metric-label">FastAPI, pandas, Streamlit, automation</span>
+                </div>
+
+                <div class="metric-card">
+                    <span class="metric-value">AI tools</span>
+                    <span class="metric-label">LLM orchestration, data workflows, local workers</span>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="section-content">
-                <h2>My Journey</h2>
-                <div class="timeline">
-
-                    <div class="timeline-item right">
-                        <div class="timeline-content">
-                            <div class="timeline-marker"></div>
-                            <h3>IT Automation & Support Analyst</h3>
-                            <h4>Creative Artists Agency</h4>
-                            <p class="timeline-date">July 2024 - Present</p>
-                            <ul class="achievement-list">
-                                <li>Spearheaded the automation of administrative tasks using Python, saving an average of 10 hours per week and boosting team efficiency by a notable margin</li>
-                                <li>Managed critical systems including Active Directory, Workday, and software deployment tools (SCCM, JAMF), ensuring smooth operations across multiple platforms</li>
-                                <li>Delivered high-quality technical support to the EU and APAC regions, achieving an impressive 95% resolution rate and consistently exceeding service benchmarks</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <div class="timeline-marker"></div>
-                            <h3>University of Hull</h3>
-                            <h4>Master of Science – Artificial Intelligence (Distinction)</h4>
-                            <p class="timeline-date">January 2024 - January 2026</p>
-                            <p class="timeline-location">Hull, United Kingdom</p>
-                            <ul class="achievement-list">
-                                <li>Achieved Distinction overall, scoring 83% on final dissertation project.</li>
-                                <li>Engineered 'Aletheia', a DistilBERT NLP model for AI-generated text detection.</li>
-                                <li>Specialized in Machine Learning, Deep Learning, and API integration.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item right">
-                        <div class="timeline-content">
-                            <div class="timeline-marker"></div>
-                            <h3>Junior Desktop Support Analyst</h3>
-                            <h4>Black Sun Global</h4>
-                            <p class="timeline-date">June 2023 – June 2024</p>
-                            <ul class="achievement-list">
-                                <li>Maintained a near-perfect device uptime of 99% by effectively troubleshooting and resolving hardware and software issues</li>
-                                <li>Developed comprehensive documentation and remote support protocols that reduced repeated service requests by 15%, enhancing overall operational efficiency</li>
-                                <li>Implemented robust security measures to ensure data protection compliance, significantly reinforcing organizational resilience</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <div class="timeline-marker"></div>
-                            <h3>Technical Specialist</h3>
-                            <h4>Radius Payment Solutions</h4>
-                            <p class="timeline-date">August 2022 – May 2023</p>
-                            <ul class="achievement-list">
-                                <li>Engineered Python and PowerShell scripts to automate IT support processes, reducing error rates by 20% and enhancing system reliability</li>
-                                <li>Provided multi-platform end-user support across Windows, iOS, laptops, and desktops, ensuring a seamless technology experience for users</li>
-                                <li>Optimized operational workflows through innovative automation strategies, resulting in notable improvements in service delivery and user satisfaction</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item right">
-                        <div class="timeline-content">
-                            <div class="timeline-marker"></div>
-                            <h3>University of Portsmouth</h3>
-                            <h4>Bachelor of Science – Computer Science</h4>
-                            <p class="timeline-date">September 2019 – August 2022</p>
-                            <p class="timeline-location">Portsmouth, United Kingdom</p>
-                            <ul class="achievement-list">
-                                <li>Relevant coursework: Data Structures, Algorithms, Software Engineering, Git</li>
-                                <li>Final year project: Good News iOS App</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
         <section id="projects" class="section">
-            <div class="section-content">
-                <h2>Featured Projects</h2>
-                <div class="project-grid">
-
-                    <!-- DataAgent -->
-                    <a href="https://data-agent-ui.vercel.app" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-chart-line project-icon"></i>
-                            <h3>DataAgent (Autonomous Analyst)</h3>
-                        </div>
-                        <p class="project-description">
-                            An autonomous B2B data analyst that translates plain English into executable Python code. Features a fault-tolerant FastAPI backend with a self-healing LLM retry loop, secure ephemeral E2B cloud sandboxing, and dynamic base64 chart extraction.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Next.js / TS</span>
-                            <span class="tech-pill">FastAPI</span>
-                            <span class="tech-pill">Llama 3</span>
-                            <span class="tech-pill">E2B Sandbox</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Fabricated  -->
-                    <a href="https://fabricated-gamma.vercel.app" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-user-secret project-icon"></i>
-                            <h3>Fabricated (AI Engine)</h3>
-                        </div>
-                        <p class="project-description">
-                            A procedural LLM-powered detective game. Features a Next.js drag-and-drop React Flow canvas synced to localStorage, and a distributed Python FastAPI backend that orchestrates a Llama 3 generation/evaluation loop with IP rate limiting.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Next.js / TS</span>
-                            <span class="tech-pill">FastAPI</span>
-                            <span class="tech-pill">Llama 3</span>
-                            <span class="tech-pill">PostgreSQL</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Aletheia -->
-                    <a href="https://github.com/tpercival01/aletheia" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-brain project-icon"></i>
-                            <h3>Aletheia (MSc Dissertation)</h3>
-                        </div>
-                        <p class="project-description">
-                            An AI content detection pipeline. Fine-tuned a DistilBERT model on a 150k dataset, achieving 99% accuracy on held-out tests. Dockerized the training environment and integrated inference into a browser extension UI.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Python</span>
-                            <span class="tech-pill">TensorFlow / HuggingFace</span>
-                            <span class="tech-pill">Docker</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Asset Management API Tool -->
-                    <a href="https://github.com/tpercival01/Asset-Checker" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-server project-icon"></i>
-                            <h3>Asset Sync Automation</h3>
-                        </div>
-                        <p class="project-description">
-                            An enterprise automation tool that unifies hardware data by ingesting and normalizing REST APIs from Intune, Jamf, and CUCM. Shipped as a standalone executable to eliminate 10+ hours of manual auditing per week.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Python</span>
-                            <span class="tech-pill">REST APIs</span>
-                            <span class="tech-pill">OAuth2</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Marina's Garden -->
-                    <a href="https://github.com/tpercival01/Marinas-Garden" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-seedling project-icon"></i>
-                            <h3>Marina's Garden</h3>
-                        </div>
-                        <p class="project-description">
-                            Grow a virtual garden and keep your plants flourishing with automated care reminders. This JavaScript-driven website lets you 'plant' flowers and greenery, then notifies you when they need watering, sunlight, or other TLC.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">JavaScript</span>
-                            <span class="tech-pill">HTML</span>
-                            <span class="tech-pill">CSS</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </span>
-                        </div>
-                    </a>
-                    <!-- Tap n Sound -->
-                    <a href="https://github.com/tpercival01/Tap-n-Sound" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-music project-icon"></i>
-                            <h3>Tap n' Sound</h3>
-                        </div>
-                        <p class="project-description">
-                            Developed Tap N' Sound, a SwiftUI-based iOS app that delivers an audio-visual response for each tap (up to 10 concurrently), recreating a discontinued app to meet client needs.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Swift</span>
-                            <span class="tech-pill">Xcode</span>
-                            <span class="tech-pill">iOS</span>
-                            <span class="tech-pill">SwiftUI</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </span>
-                        </div>
-                    </a>
-
-                    <!-- Circuit Puzzle Game -->
-                    <a href="https://github.com/tpercival01/circuit-puzzle-game" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-microchip project-icon"></i>
-                            <h3>Circuit Puzzle Game</h3>
-                        </div>
-                        <p class="project-description">
-                            Designed and developed a puzzle game where players connect circuit tiles to complete a path. Built with Pygame, featuring an intuitive UI with a main menu, difficulty levels, and engaging gameplay mechanics to challenge users as they progress.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Python</span>
-                            <span class="tech-pill">Pygame</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </span>
-                        </div>
-                    </a>
-
-                    <!-- Manor Murder Mystery -->
-                    <a href="https://github.com/tpercival01/manor-murder-mystery" class="project-card" target="_blank">
-                        <div class="project-header">
-                            <i class="fas fa-magnifying-glass project-icon"></i>
-                            <h3>Manor Murder Mystery</h3>
-                        </div>
-                        <p class="project-description">
-                            Immerse yourself in a richly woven detective narrative where a lavish soirée turns deadly. Traverse hidden passages, collect crucial evidence, and issue contextual text commands to uncover the culprit behind a gruesome murder.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Python</span>
-                            <span class="tech-pill">Pygame</span>
-                        </div>
-                        <div class="project-footer">
-                            <span class="view-project">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </span>
-                        </div>
-                    </a>
-                </div>
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2>Flagship projects</h2>
+                <p>
+                    These are the strongest proof-of-work projects for Python backend, AI workflow, automation, and product engineering roles.
+                </p>
             </div>
+
+            <div id="featured-projects" class="project-grid featured-grid" aria-live="polite"></div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="section-content">
-                <h2>Technical Skills</h2>
-                <div class="skills-focus">
-                    <div class="focus-area">
-                        <div class="focus-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Core Languages</h3>
-                        </div>
-                        <ul class="focus-list">
-                            <li class="skill-item" data-projects="Fabricated, Asset Sync Automation, Aletheia">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-detail">Backend, Automation & AI</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Fabricated (FastAPI Backend)</li>
-                                        <li>Asset Sync Automation</li>
-                                        <li>Aletheia (AI Pipeline)</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="skill-item" data-projects="CAA Automations">
-                                <span class="skill-name">PowerShell</span>
-                                <span class="skill-detail">Infrastructure & M365 Automation</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Active Directory Lifecycles</li>
-                                        <li>Intune Endpoint Scripts</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="skill-item" data-projects="Fabricated, Aletheia, Marina's Garden">
-                                <span class="skill-name">Bash & JavaScript</span>
-                                <span class="skill-detail">System Scripting & Web UIs</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Fabricated (Next.js/React)</li>
-                                        <li>Linux Container Deployment</li>
-                                        <li>Browser Extension UI</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+        <section class="section">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="eyebrow">Repository index</p>
+                    <h2>All public projects</h2>
+                    <p>
+                        A complete index of public repositories, including frontend companions, experiments, games, and earlier projects.
+                    </p>
+                </div>
 
-                    <div class="focus-area">
-                        <div class="focus-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Frameworks & Platforms</h3>
-                        </div>
-                        <ul class="focus-list">
-                            <li class="skill-item" data-projects="CAA Automations">
-                                <span class="skill-name">ServiceNow & Intune</span>
-                                <span class="skill-detail">ITSM & Device Management</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Automated Reporting Suites</li>
-                                        <li>Device Compliance Workflows</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="skill-item" data-projects="Aletheia">
-                                <span class="skill-name">Docker & Git</span>
-                                <span class="skill-detail">Containerization & Version Control</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Environment Reproducibility</li>
-                                        <li>CI/CD Pipelines</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="skill-item" data-projects="Aletheia, Fabricated">
-                                <span class="skill-name">HuggingFace & TensorFlow</span>
-                                <span class="skill-detail">Model Fine-tuning & Deployment</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Aletheia NLP Pipeline</li>
-                                        <li>LLM Integration (Llama 3)</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="focus-area">
-                        <div class="focus-header">
-                            <i class="fas fa-database"></i>
-                            <h3>Technologies & APIs</h3>
-                        </div>
-                        <ul class="focus-list">
-                            <li class="skill-item" data-projects="Fabricated, Asset Sync Automation, CAA Automations">
-                                <span class="skill-name">REST APIs & OAuth2</span>
-                                <span class="skill-detail">Enterprise Data Integration</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Fabricated (Groq LLM Integration)</li>
-                                        <li>ServiceNow API Integration</li>
-                                        <li>Microsoft Graph API</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="skill-item" data-projects="Asset Sync Automation, Aletheia">
-                                <span class="skill-name">Pandas & NumPy</span>
-                                <span class="skill-detail">Data Normalization & Analysis</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>Cross-platform Data Deduplication</li>
-                                        <li>Dataset Preprocessing</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="skill-item" data-projects="Aletheia">
-                                <span class="skill-name">NLP Architecture</span>
-                                <span class="skill-detail">Transformers & Tokenization</span>
-                                <div class="project-tooltip">
-                                    <h4>Related Work:</h4>
-                                    <ul>
-                                        <li>DistilBERT Implementation</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="project-tools" aria-label="Project filters">
+                    <label class="search-label" for="project-search">Search projects</label>
+                    <input id="project-search" type="search" placeholder="Search by name, stack, or category" autocomplete="off" />
                 </div>
             </div>
+
+            <div class="filter-row" id="filter-row" aria-label="Filter projects"></div>
+
+            <p class="project-count" id="project-count"></p>
+
+            <div id="all-projects" class="project-grid compact-grid" aria-live="polite"></div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="section-content">
-                <h2>Let's Connect!</h2>
-                <div class="contact-container">
-                    <a href="mailto:thomaspercival@live.co.uk" class="contact-card" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email Me!</span>
-                    </a>
-                    <a href="https://github.com/tpercival01" class="contact-card" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/thomaspercival" class="contact-card" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="assets/resume.pdf" class="contact-card" target="_blank">
-                        <i class="fas fa-file-pdf"></i>
-                        <span class="button-text">View my Resume!</span>
-                    </a>
+        <section id="contact" class="section contact-section">
+            <div class="contact-card-large">
+                <p class="eyebrow">Contact</p>
+                <h2>Need a Python tool, backend service, or internal automation system?</h2>
+                <p>
+                    I am open to freelance Python development, automation work, internal tools, AI workflow systems, and backend engineering opportunities.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary" href="mailto:thomaspercival@live.co.uk">
+            Email me
+          </a>
+                    <a class="button secondary" href="https://github.com/tpercival01" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+                    <a class="button secondary" href="https://linkedin.com/in/thomaspercival" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <p>Thomas Percival · Python Backend Developer · Open to freelance work</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

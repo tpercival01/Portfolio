@@ -1,25 +1,44 @@
-# Personal Portfolio Website
+# Thomas Percival Project Hub
 
-A clean and responsive portfolio website showcasing my professional experience, projects, and skills.
+A minimal project-directory website inspired by simple creative hubs such as neal.fun.
 
-🔗 [View Live Site](https://tpercival01.github.io/Portfolio)
+Instead of a traditional multi-page portfolio, this site acts as a fast link hub for projects, experiments, apps, games, and GitHub repositories.
 
-## Overview
+## Live site
 
-This portfolio website serves as a comprehensive showcase of my work, skills, and professional journey. Built with vanilla HTML, CSS, and JavaScript, it provides visitors with an easy way to learn about my experience and get in touch.
+[View live site](https://tpercival01.github.io/Portfolio)
 
-## Features
+## What changed
 
-- 📱 Fully responsive design
-- 💼 Project showcase with live demos and source code links
-- 📄 Downloadable resume
-- 📬 Contact form
-- 🎨 Clean and modern UI
-- ⚡ Fast loading and optimized performance
+- Replaced the previous multi-section portfolio with a single project hub
+- Removed the timeline, skills section, theme switcher, page indicator, and heavy navigation
+- Added a playful card grid for projects
+- Added simple search and category filters
+- Kept the site fully static with no build step
 
-## Technologies Used
+## Tech stack
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - GitHub Pages
+
+## Editing projects
+
+Projects are edited directly in `index.html`.
+
+Each project card uses:
+
+- `href` for the project link
+- `data-tags` for search and filtering
+- `--card-colour` for the tile background
+- `--card-accent` for text and border accents
+
+## Files
+
+```text
+index.html
+style.css
+script.js
+README.md
+```
