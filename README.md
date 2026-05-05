@@ -2,7 +2,7 @@
 
 A clean and responsive portfolio website showcasing my professional experience, projects, and skills.
 
-🔗 [View Live Site](www.thomaspercival.dev)
+🔗 [View Live Site](https://thomaspercival.dev)
 
 ## Overview
 
