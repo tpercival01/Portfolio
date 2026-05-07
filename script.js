@@ -7,7 +7,15 @@ const projects = [{
         categories: ["python", "backend", "ai", "data"],
         featured: true,
         summary: "Autonomous Python execution engine that turns plain-English spreadsheet questions into sandboxed pandas and matplotlib workflows with error recovery, logs, and chart output.",
-        stack: ["Python", "FastAPI", "Pydantic", "Groq", "Llama 3", "E2B", "pandas"]
+        stack: [
+            "Python",
+            "FastAPI",
+            "Pydantic",
+            "Groq",
+            "Llama 3",
+            "E2B",
+            "pandas",
+        ],
     },
     {
         title: "Project Onyx API",
@@ -18,7 +26,15 @@ const projects = [{
         categories: ["python", "backend", "data"],
         featured: true,
         summary: "FastAPI backend for asynchronous Xbox data ingestion, using Celery, Redis, PostgreSQL, delta syncing, and idempotent upserts.",
-        stack: ["Python", "FastAPI", "Celery", "Redis", "PostgreSQL", "Docker", "SQLAlchemy"]
+        stack: [
+            "Python",
+            "FastAPI",
+            "Celery",
+            "Redis",
+            "PostgreSQL",
+            "Docker",
+            "SQLAlchemy",
+        ],
     },
     {
         title: "Prism Desktop",
@@ -29,7 +45,7 @@ const projects = [{
         categories: ["python", "ai", "automation"],
         featured: true,
         summary: "Desktop worker that connects to OBS, listens for voice-triggered clipping, processes video with FFmpeg, and generates AI captions for short-form content.",
-        stack: ["Python", "OBS WebSocket", "FFmpeg", "Whisper", "PyInstaller"]
+        stack: ["Python", "OBS WebSocket", "FFmpeg", "Whisper", "PyInstaller"],
     },
     {
         title: "SheetSignal",
@@ -40,20 +56,19 @@ const projects = [{
         categories: ["python", "data", "automation"],
         featured: true,
         summary: "Lightweight tool that turns messy CSV and Excel files into data quality scores, insights, charts, next steps, and downloadable reports.",
-        stack: ["Python", "Streamlit", "pandas", "Matplotlib"]
+        stack: ["Python", "Streamlit", "pandas", "Matplotlib"],
     },
     {
-        title: "VCT Draft Analyst",
-        repo: "https://github.com/tpercival01/val-ai",
+        title: "Perzevol.OS",
+        repo: "https://github.com/tpercival01/perzevol-os",
         live: "",
-        type: "AI gaming assistant",
+        type: "Algorithmic gaming suite",
         language: "Python",
         categories: ["python", "ai", "data", "game"],
         featured: true,
-        summary: "Streamlit-based Valorant draft assistant that combines VCT composition data, rule-based validation, and constrained LLM prompting to recommend ranked agent picks.",
-        stack: ["Python", "Streamlit", "pandas", "Groq", "Llama 3", "JSON"]
-    },
-    {
+        summary: "Modular Streamlit operating system containing algorithmic scripts to analyse competitive games, featuring a data-driven Valorant draft advisor powered by pandas pipelines and constrained Groq LLM calls.",
+        stack: ["Python", "Streamlit", "pandas", "Groq", "Llama 3"],
+    }, {
         title: "Fabricated AI Engine",
         repo: "https://github.com/tpercival01/Fabricated-AI-Engine",
         live: "https://fabricated.thomaspercival.dev/",
@@ -62,7 +77,7 @@ const projects = [{
         categories: ["python", "backend", "ai", "game"],
         featured: true,
         summary: "FastAPI orchestration layer for a procedural detective game, using strict Pydantic schemas and a multi-step LLM pipeline to generate playable mystery cases.",
-        stack: ["Python", "FastAPI", "Pydantic", "Groq", "Supabase", "PostgreSQL"]
+        stack: ["Python", "FastAPI", "Pydantic", "Groq", "Supabase", "PostgreSQL"],
     },
     {
         title: "Aletheia",
@@ -73,7 +88,7 @@ const projects = [{
         categories: ["ai", "web"],
         featured: true,
         summary: "Privacy-preserving Chrome extension that runs AI-generated text detection locally in the browser using a quantised DistilBERT model and WebAssembly inference.",
-        stack: ["JavaScript", "Chrome Extension", "ONNX", "WebAssembly", "Transformers.js"]
+        stack: ["JavaScript", "Chrome Extension", "ONNX", "WebAssembly"],
     },
     {
         title: "Marina's Garden Backend",
@@ -84,7 +99,7 @@ const projects = [{
         categories: ["python", "backend", "ai"],
         featured: false,
         summary: "Python FastAPI service for an AI-powered digital garden, handling CRUD operations, authentication routing, Supabase storage, and Groq-generated botany data.",
-        stack: ["Python", "FastAPI", "Pydantic", "Groq", "Supabase", "PostgreSQL"]
+        stack: ["Python", "FastAPI", "Pydantic", "Groq", "Supabase", "PostgreSQL"],
     },
     {
         title: "DataAgent UI",
@@ -95,7 +110,7 @@ const projects = [{
         categories: ["frontend", "ai", "data"],
         featured: false,
         summary: "Next.js interface for DataAgent, designed around spreadsheet upload, natural-language analysis requests, generated code visibility, logs, and chart output.",
-        stack: ["TypeScript", "Next.js", "UI", "FastAPI client", "Data analysis"]
+        stack: ["TypeScript", "Next.js", "UI", "FastAPI client", "Data analysis"],
     },
     {
         title: "Project Onyx",
@@ -106,7 +121,7 @@ const projects = [{
         categories: ["frontend", "data"],
         featured: false,
         summary: "Next.js frontend for Project Onyx, paired with the Python API sync engine to present tracked Xbox achievement and profile data.",
-        stack: ["TypeScript", "Next.js", "PostgreSQL", "Drizzle"]
+        stack: ["TypeScript", "Next.js", "PostgreSQL", "Drizzle"],
     },
     {
         title: "Prism",
@@ -117,7 +132,7 @@ const projects = [{
         categories: ["frontend", "automation", "ai"],
         featured: false,
         summary: "Web hub for a hybrid creator automation platform, connecting Twitch authentication, dashboard settings, app keys, and a local Python desktop worker.",
-        stack: ["TypeScript", "Next.js", "Tailwind", "NextAuth", "Twitch OAuth", "Drizzle"]
+        stack: ["TypeScript", "Next.js", "Tailwind", "NextAuth", "Twitch OAuth"],
     },
     {
         title: "Fabricated",
@@ -128,7 +143,7 @@ const projects = [{
         categories: ["frontend", "ai", "game"],
         featured: false,
         summary: "Next.js frontend for a procedural true-crime mystery game, using React Flow to let players connect clues, suspects, and theories on a digital evidence board.",
-        stack: ["TypeScript", "Next.js", "React Flow", "Tailwind", "FastAPI client"]
+        stack: ["TypeScript", "Next.js", "React Flow", "Tailwind", "FastAPI"],
     },
     {
         title: "Marina's Garden Frontend",
@@ -139,7 +154,7 @@ const projects = [{
         categories: ["frontend", "ai", "web"],
         featured: false,
         summary: "Responsive Next.js client for a digital garden app, with plant care state, Supabase authentication, local tutorial logic, and a custom FastAPI backend.",
-        stack: ["TypeScript", "Next.js", "React", "Tailwind", "Supabase"]
+        stack: ["TypeScript", "Next.js", "React", "Tailwind", "Supabase"],
     },
     {
         title: "AI Internal Tools",
@@ -150,40 +165,7 @@ const projects = [{
         categories: ["frontend", "web", "automation"],
         featured: false,
         summary: "Lightweight consulting site focused on automation services, client pain points, delivery speed, and custom internal tool offers.",
-        stack: ["TypeScript", "Next.js", "Tailwind", "Vercel"]
-    },
-    {
-        title: "Portfolio",
-        repo: "https://github.com/tpercival01/Portfolio",
-        live: "https://tpercival01.github.io/Portfolio/",
-        type: "Portfolio site",
-        language: "HTML",
-        categories: ["web"],
-        featured: false,
-        summary: "Personal portfolio site for presenting projects, contact links, and professional positioning.",
-        stack: ["HTML", "CSS", "JavaScript", "GitHub Pages"]
-    },
-    {
-        title: "tpercival01",
-        repo: "https://github.com/tpercival01/tpercival01",
-        live: "",
-        type: "GitHub profile",
-        language: "Markdown",
-        categories: ["web"],
-        featured: false,
-        summary: "GitHub profile repository used to present headline positioning, technical focus, and public developer identity.",
-        stack: ["Markdown", "GitHub Profile"]
-    },
-    {
-        title: "Education Platform",
-        repo: "https://github.com/tpercival01/Education_platform",
-        live: "",
-        type: "Education website",
-        language: "HTML",
-        categories: ["web"],
-        featured: false,
-        summary: "Static education platform project from earlier web development work.",
-        stack: ["HTML", "CSS", "JavaScript"]
+        stack: ["TypeScript", "Next.js", "Tailwind", "Vercel"],
     },
     {
         title: "Manor Murder Mystery",
@@ -194,7 +176,7 @@ const projects = [{
         categories: ["python", "game"],
         featured: false,
         summary: "Text adventure mystery game built in Python, focused on exploration, clues, and deduction.",
-        stack: ["Python", "Game logic", "Text adventure"]
+        stack: ["Python", "Game logic", "Text adventure"],
     },
     {
         title: "Circuit Puzzle Game",
@@ -205,8 +187,8 @@ const projects = [{
         categories: ["python", "game"],
         featured: false,
         summary: "Puzzle game where players connect circuit tiles to complete a path, built as an earlier Python game project.",
-        stack: ["Python", "Pygame", "Puzzle logic"]
-    }
+        stack: ["Python", "Pygame", "Puzzle logic"],
+    },
 ];
 
 const filters = [
@@ -218,7 +200,7 @@ const filters = [
     { label: "Data", value: "data" },
     { label: "Frontend", value: "frontend" },
     { label: "Games", value: "game" },
-    { label: "Web", value: "web" }
+    { label: "Web", value: "web" },
 ];
 
 const featuredContainer = document.querySelector("#featured-projects");
@@ -238,7 +220,7 @@ function createProjectCard(project) {
             project.live ?
             `<a class="project-link" href="${project.live}" target="_blank" rel="noopener noreferrer">Live</a>` :
             "",
-            `<a class="project-link" href="${project.repo}" target="_blank" rel="noopener noreferrer">GitHub</a>`
+            `<a class="project-link" href="${project.repo}" target="_blank" rel="noopener noreferrer">GitHub</a>`,
         ]
         .filter(Boolean)
         .join("");
@@ -285,7 +267,7 @@ function getFilteredProjects() {
       project.language,
       project.summary,
       project.stack.join(" "),
-      project.categories.join(" ")
+      project.categories.join(" "),
     ]
       .join(" ")
       .toLowerCase();
@@ -313,7 +295,8 @@ function renderFilters() {
 
   filters.forEach((filter) => {
     const button = document.createElement("button");
-    button.className = `filter-button${filter.value === activeFilter ? " active" : ""}`;
+    const activeClass = filter.value === activeFilter ? " active" : "";
+    button.className = `filter-button${activeClass}`;
     button.type = "button";
     button.textContent = filter.label;
     button.dataset.filter = filter.value;
