@@ -20,7 +20,7 @@ const projects = [
     },
     {
         title: "OpsOracle",
-        repo: "https://github.com/tpercival01/ops-oracle",
+        repo: "https://github.com/tpercival01/opsoracle",
         live: "",
         type: "AI incident triage prototype",
         language: "Python",
