@@ -1,0 +1,57 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    role="img"
+    aria-labelledby="title"
+>
+    <title id="title">Percival Studio</title>
+
+    <rect
+        width="512"
+        height="512"
+        rx="112"
+        fill="#0b0c0e"
+    />
+
+    <rect
+        x="2"
+        y="2"
+        width="508"
+        height="508"
+        rx="110"
+        fill="none"
+        stroke="#2b2e33"
+        stroke-width="4"
+    />
+
+    <path
+        d="
+            M142 372
+            V140
+            H250
+            C328 140 374 179 374 244
+            C374 310 327 350 248 350
+            H202
+            V372
+            Z
+
+            M202 194
+            V296
+            H245
+            C289 296 313 279 313 245
+            C313 211 289 194 245 194
+            Z
+        "
+        fill="#f5f4f0"
+        fill-rule="evenodd"
+    />
+
+    <rect
+        x="326"
+        y="328"
+        width="48"
+        height="48"
+        rx="12"
+        fill="#777c85"
+    />
+</svg>

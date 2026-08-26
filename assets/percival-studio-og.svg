@@ -1,0 +1,110 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1200"
+    height="630"
+    viewBox="0 0 1200 630"
+>
+    <rect width="1200" height="630" fill="#0b0c0e" />
+
+    <circle
+        cx="1040"
+        cy="80"
+        r="300"
+        fill="#15171b"
+    />
+
+    <circle
+        cx="50"
+        cy="620"
+        r="320"
+        fill="#111317"
+    />
+
+    <text
+        x="90"
+        y="125"
+        fill="#777c85"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="25"
+        font-weight="700"
+        letter-spacing="5"
+    >
+        INDEPENDENT SOFTWARE STUDIO
+    </text>
+
+    <text
+        x="90"
+        y="270"
+        fill="#f5f4f0"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="92"
+        font-weight="800"
+        letter-spacing="-5"
+    >
+        Percival Studio
+    </text>
+
+    <text
+        x="90"
+        y="355"
+        fill="#a2a6ad"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="38"
+        font-weight="500"
+    >
+        Apps, games and strange little experiences.
+    </text>
+
+    <g transform="translate(940 355) scale(0.32)">
+        <rect
+            width="512"
+            height="512"
+            rx="112"
+            fill="#111317"
+            stroke="#2b2e33"
+            stroke-width="8"
+        />
+
+        <path
+            d="
+                M142 372
+                V140
+                H250
+                C328 140 374 179 374 244
+                C374 310 327 350 248 350
+                H202
+                V372
+                Z
+
+                M202 194
+                V296
+                H245
+                C289 296 313 279 313 245
+                C313 211 289 194 245 194
+                Z
+            "
+            fill="#f5f4f0"
+            fill-rule="evenodd"
+        />
+
+        <rect
+            x="326"
+            y="328"
+            width="48"
+            height="48"
+            rx="12"
+            fill="#777c85"
+        />
+    </g>
+
+    <text
+        x="90"
+        y="555"
+        fill="#666b73"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24"
+        font-weight="600"
+    >
+        thomaspercival.dev
+    </text>
+</svg>
