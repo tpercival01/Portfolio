@@ -501,28 +501,58 @@ h3 {
 
 
 /* --------------------------------------------------
-   STORE STATUS
+   STORE BADGES
 -------------------------------------------------- */
 
-.store-status {
-    display: inline-flex;
-    align-items: center;
+.store-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.store-badge {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    min-height: 40px;
+    min-width: 138px;
+    min-height: 48px;
 
-    padding: 0.6rem 0.85rem;
+    padding: 0.55rem 0.85rem;
+
+    color: var(--text);
+
+    background: #050505;
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 9px;
+
+    line-height: 1.05;
+}
+
+.store-badge-label {
+    margin-bottom: 0.18rem;
 
     color: var(--text-soft);
 
-    background: rgba(255, 255, 255, 0.025);
+    font-size: 0.59rem;
+    font-weight: 600;
 
-    border: 1px solid var(--border);
+    letter-spacing: 0.01em;
+}
 
-    border-radius: 999px;
-
-    font-size: 0.76rem;
+.store-badge strong {
+    font-size: 0.98rem;
     font-weight: 700;
+
+    letter-spacing: -0.025em;
+}
+
+.store-badge.unavailable {
+    opacity: 0.58;
 }
 
 
@@ -627,6 +657,15 @@ h3 {
 -------------------------------------------------- */
 
 @media (max-width: 620px) {
+    .store-badges {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .store-badge {
+        min-width: 0;
+    }
+    
     .site-header {
         width: min(var(--max-width), calc(100% - 2rem));
     }
