@@ -726,10 +726,6 @@ h3 {
         flex-direction: column;
     }
 
-    .store-status {
-        width: 100%;
-    }
-
     .section-heading {
         margin-bottom: 2rem;
     }
