@@ -238,6 +238,24 @@ h3 {
     line-height: 1.65;
 }
 
+.studio-promise {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 1.45rem 0 0;
+    padding: 0.6rem 0.9rem;
+
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    font-size: 0.82rem;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+}
+
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -564,6 +582,40 @@ h3 {
     border-top: 1px solid var(--border);
 }
 
+.studio-values {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 1rem;
+
+    margin-top: 2.5rem;
+}
+
+.studio-value {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    padding: 1.35rem;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.studio-value strong {
+    font-size: 0.92rem;
+}
+
+.studio-value span {
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
 
 /* --------------------------------------------------
    CONTACT
@@ -649,6 +701,10 @@ h3 {
     .app-card {
         min-height: 290px;
     }
+
+    .studio-values {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -692,6 +748,11 @@ h3 {
 
     h1 {
         font-size: clamp(3.25rem, 17vw, 5.2rem);
+    }
+
+    .studio-promise {
+        border-radius: var(--radius-sm);
+        line-height: 1.45;
     }
 
     .hero-actions {
