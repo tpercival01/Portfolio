@@ -549,6 +549,7 @@ h3 {
     border-radius: 9px;
 
     line-height: 1.05;
+    text-decoration: none;
 }
 
 .store-badge-label {
@@ -778,13 +779,27 @@ h3 {
     .app-icon-placeholder {
         width: 90px;
         height: 90px;
-
         border-radius: 21px;
+        justify-self: center;
+        margin-bottom: 0.5rem;
     }
 
     .app-actions {
-        align-items: stretch;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .app-actions .button {
+        width: auto;
+    }
+
+    .store-badges {
+        display: flex;
+        width: auto;
+        margin-top: 0;
     }
 
     .section-heading {
@@ -799,3 +814,4 @@ h3 {
         width: min(var(--max-width), calc(100% - 2rem));
     }
 }
+
